@@ -44,7 +44,7 @@ class Account(AbstractBaseUser):
     #required
     date_joined = DateTimeField(auto_now_add=True)
     last_login  = DateTimeField(auto_now_add=True)
-    is_active   = BooleanField(default=False)
+    is_active   = BooleanField(default=True)
     is_staff    = BooleanField(default=False)
     is_admin    = BooleanField(default=False)
     is_superadmin   = BooleanField(default=False)
